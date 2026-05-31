@@ -15,7 +15,5 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: ls -la                    
-      - run: ls -la src/               
-      - run: ls -la src/test/          
       - run: npm test
+      - run: npm run lint
